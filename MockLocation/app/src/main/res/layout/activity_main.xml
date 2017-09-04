@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="经度，104.088119"
+        android:inputType="numberDecimal"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_longitude"
+        android:background="@null"
+        android:hint="纬度，30.637545"
+        android:inputType="number|numberDecimal"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tv_boot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_latitude"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="启动模拟位置"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_boot"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="停止模拟位置"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_get_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_stop"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="获取位置"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_show_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_get_location"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="显示位置区域"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+</RelativeLayout>
